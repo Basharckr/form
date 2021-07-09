@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Form</title>
+</head>
+
+<body style="background-color: #121212; font-family: Poppins;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="col-md-2"></div>
+        <div class="row">
+            <a class="navbar-brand" style="font-weight: bolder;font-size: xx-large;color: #6ae98d; "
+                href="#">Fanconvo</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="col-md-5" ></div>
+            <div class="collapse navbar-collapse "  id="navbarNav">
+                <ul class="navbar-nav" style="margin-top: 3em; " id="navbutton">
+                        <span style="color: #b2bac7;">Signup</span>
+                   
+                        <span style="color: #b2bac7;">Login</span>
+                   
+
+                </ul>
+            </div>
+        </div>
+        <div style="color: #b2bac7;" class="col-md-2"></div>
+
+        <div  style="color: #b2bac7;" class="row">
+            <span style="margin-left: 1em;">A marketplace for conversations, mentorships and performances.</span>
+        </div>
+    </nav>
+    <section>
+        {% block content %}
+        {% endblock %}
+
+    </section>
+    <footer id="footer" style="margin-top: 2em;" class="bg-light text-center ">
+        <div class="col-md-2"></div>
+
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="navbar-brand" style="font-weight: bolder;font-size: xx-large;color: #6ae98d; "
+                href="#">Fanconvo</a>
+                
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="static/main.js"></script>
+
+</html>
